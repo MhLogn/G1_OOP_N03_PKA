@@ -1,6 +1,4 @@
-package com.mycompany.app;
-
-import javax.naming.Name;
+package main.java.com.mycompany.app;
 
 public class NameNumber {
     private String lastName;

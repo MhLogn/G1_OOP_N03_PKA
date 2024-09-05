@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package main.java.com.mycompany.app;
 
 public class Recursion {
     public long factorial(long i) {
@@ -9,4 +9,4 @@ public class Recursion {
             return i * factorial(i -1);
         }
     }
-}
+}   
