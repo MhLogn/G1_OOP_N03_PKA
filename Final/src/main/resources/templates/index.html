@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stysheet" th:href="@{static/CSS/mycss.css}">
+    <style>
+        html, body{
+            background-color: aliceblue ;
+        }
+
+        h1 {
+            background-color: gray;
+            color: black;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .header-list {
+            background-color: beige;
+            width: 30%;
+        }
+
+        #content {
+            margin: 20px;
+        }
+
+        .content-first{}
+
+        .row-content {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .first-link {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <h1>Quản Lý Trại Giam</h1>
+    <div class="header-list">
+    <h3>Group 1 - OOP - N03</h3>
+        <ul>
+            <li>Hà Mạnh Long</li>
+            <li>Ngô Đặng Nhật Dũng</li>
+            <li>K17-CNTT-4</li>
+        </ul>
+    </div>
+</header>
+
+<div id="content">
+    <div class="content-first">
+        <div class="row-content">
+            <div class="first-link">
+                <ul>
+                    <li><a href="http://localhost:8080/prison/list" target="_blank">Danh sách các tù nhân </a></li>
+                    <li><p>Thông tin cá nhân của tù nhân</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
