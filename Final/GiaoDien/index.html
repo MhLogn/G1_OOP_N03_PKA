@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý nhà tù</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Hệ thống quản lý nhà tù</h1>
+        
+        <!-- Hai nút chức năng quản lý tù nhân và phòng giam -->
+        <div class="text-center mb-5">
+            <button class="btn btn-primary btn-lg me-3" onclick="showPrisoners()">Quản lý tù nhân</button>
+            <button class="btn btn-success btn-lg" onclick="showCells()">Quản lý phòng giam</button>
+        </div>
+
+        <!-- Khu vực quản lý tù nhân -->
+        <div id="prisoners-section">
+            <h2>Quản lý tù nhân</h2>
+            <button class="btn btn-primary mb-3">Thêm tù nhân</button>
+            <table style="text-align: center" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mã tù nhân</th>
+                        <th>Tên tù nhân</th>
+                        <th>Tuổi</th> 
+                        <th>Giới tính</th>
+                        <th>Quê quán</th>
+                        <th>Phạm tội</th>
+                        <th>Mức án</th>
+                        <th>Ngày vào trại</th> 
+                        <th>Ngày ra trại(Dự kiến)</th>  
+                        <th>Phòng giam</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody style="text-align: center;">
+                    <tr>
+                        <td>#hnn26</td>
+                        <td>Ngô Đặng Nhật Dũng</td>
+                        <td>19</td>
+                        <td>Lẩu gà</td>
+                        <td>Bình Thuận</td>
+                        <td>Quá iu các e</td>
+                        <td>Chung thân</td>
+                        <td>26/09/2024</td>
+                        <td>&#8734</td>
+                        <td>Trái tym</td>
+                        <td>
+                            <button class="btn btn-light">Chỉnh sửa</button>
+                            <button class="btn btn-dark">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Khu vực quản lý phòng giam -->
+        <div id="cells-section" style="display: none;">
+            <h2>Quản lý phòng giam</h2>
+            <button class="btn btn-success mb-3">Thêm phòng giam</button>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Tên phòng giam</th>
+                        <th>Số lượng hiện tại</th>
+                        <th>Số lượng tối đa</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Phòng giam thiên đường</td>
+                        <td>
+                            <button class="btn btn-light">Chỉnh sửa</button>
+                            <button class="btn btn-dark">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function showPrisoners() {
+            document.getElementById('prisoners-section').style.display = 'block';
+            document.getElementById('cells-section').style.display = 'none';
+        }
+
+        function showCells() {
+            document.getElementById('prisoners-section').style.display = 'none';
+            document.getElementById('cells-section').style.display = 'block';
+        }
+    </script>
+    <img style="width: 1400px;display: flex;" alt="Nhatu" src="nhatu.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
